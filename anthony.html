@@ -1,83 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    
-    <div class="container mt-5" >
-           
-            <form> 
-            <div>
-            <h3 class=""> :::Recetas:::</h3>
-            </div>
-            <div class="mt-3">
-                <lable class="mt-5" for="">Ingrese el titulo: </lable>
-                <input
-                type="text"
-                id="titulo"
-                name="tiutlo"
-                placeholder="Ingrese el titulo">
-            </div>
-            
+  </head>
+  <body>
+    <div class="container mt-5 text-center">
+        <div class="row">
+            <div class="col-md-12 border border-success">
+                <h1>Recetario</h1>
                 
-            
-            <div class="mt-3">
-                <label for="">ingrediente:  </label>
-                 <input type="text" id="ingrediente" name="ingrediente" placeholder="ingrese el ingrediente">
             </div>
-            <div class="mt-3">
-                <label for="">Pasos: </label>
-                <input type="text" id="pasos" name="pasos" placeholder="ingrese los pasos">
+        </div>
+        
+        <!-- <div class="row">
+            <div class="col-md-12">
+                <h2>Grupo 1</h2>
             </div>
-            </form>
-            
-             
+        </div> -->
 
-<div class="d-grid gap-2 d-md-block mx-auto mt-3">
-  <button class="btn btn-primary" type="button">Agregar</button>
-  
-</div>
+        <div class="row">
+            <div class="col-md-6 p-3">
+                <label for="">TITULO: </label>
+                <input type="text" id="Titulo">
 
-   
-            
- <table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Titulo</th>
-      <th scope="col">ingrediente</th>
-      <th scope="col">Pasos</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
-               
+                <div class="mt-3">
+                    <label for="Ingredientes ">INGREDIENTES: </label>
+                <input type="text" id="Ingredientes">
+                </div>
+                
+                <div class="mt-3">
+                    <label for="Pasos">PASOS: </label>
+                <input type="text" id="Paso">
+                </div>
+                <div class="mt-3">
+                    <button onclick="guardar()" id="boton">Guardar</button>
+                </div>
+                
+
+            </div>
+                
+                
     </div>
 
-   <script src="script.js"></script>
-</body>
+      <div class="container">
+        <h1>Receta</h1>
+         <label for="">ingredientes</label>
+      </div>
+
+   <table class="ui celled table">
+      <thead>
+        <tr>
+          <th>Titulo</th>
+          <th>Ingredientes</th>
+          <th>Pasos</th>
+        </tr>
+      </thead>
+      <tbody id="taskList"></tbody>
+      
+    </table>
+  </div>
+
+
+    <footer class="bg-dark text-white p-3 fixed-bottom">
+        <div class="row">
+                    <div class="col-md-4">
+                        <h3>Creditos:</h3>
+                        <p>Anthony Soledispa</p>
+                    </div> 
+                </div>
+    </footer>
+                
+
+    <script src="script.js"></script>
+  </body>
 </html>
