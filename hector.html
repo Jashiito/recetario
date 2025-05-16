@@ -7,60 +7,67 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-    
-    <div class="container : border border-dark p-2">
-        <h1>Recetas</h1>
-         <label for="nombre">Titulo:</label>
-         <input type="text">
+    <div class="container mt-5 text-center">
+        <div class="row">
+            <div class="col-md-12 border border-success">
+                <h1>Recetario</h1>
+                
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-6 p-3">
+                <label for="">TITULO: </label>
+                <input type="text" id="Titulo">
 
-         <div>
-          <label for="nombre">ingredientes:</label>
-         <input type="text">
-         </div>
-
-         <div>
-          <label for="nombre">Pasos:</label>
-         <input type="text">
-         </div> 
-          
-         <div class="mt-3">
+                <div class="mt-3">
+                    <label for="Ingredientes ">INGREDIENTES: </label>
+                <input type="text" id="Ingredientes">
+                </div>
+                
+                <div class="mt-3">
+                    <label for="Pasos">PASOS: </label>
+                <input type="text" id="Paso">
+                </div>
+                <div class="mt-3">
                     <button onclick="guardar()" id="boton">Guardar</button>
                 </div>
+                
 
-        <div class="two wide field">
-       
-       
-         <table class="ui celled table">
-          </div>
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Titulo</th>
-        <th>Ingredientes</th>
-        <th>Pasos</th>
-        
-      </tr>
-    </thead>
-    <tbody id="lista-tareas"></tbody>
-  </table>
+            </div>
+                
+                
+    </div>
 
+      <div class="container">
+        <h1>Receta</h1>
+         
       </div>
 
+   <table class="ui celled table">
+      <thead>
+        <tr>
+          <th>Titulo</th>
+          <th>Ingredientes</th>
+          <th>Pasos</th>
+        </tr>
+      </thead>
+      <tbody id="taskList"></tbody>
+      
+    </table>
+  </div>
 
 
-      <footer class="bg-dark text-white p-3 fixed-bottom">
+    <footer class="bg-dark text-white p-3 fixed-bottom">
         <div class="row">
                     <div class="col-md-4">
                         <h3>Creditos:</h3>
-                        <p>hector sandoval</p>
+                        <p>Hector Sandoval</p>
                     </div> 
                 </div>
     </footer>
+                
 
-    <script src="script.js">
-
-    
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
